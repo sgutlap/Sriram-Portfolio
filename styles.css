@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+header {
+    background-color: #26c6da;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #e64a19;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animated-element {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    margin: 20px auto;
+    animation: bounce 2s infinite;
+}
